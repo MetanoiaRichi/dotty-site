@@ -1,0 +1,146 @@
+html {
+    width: 100vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+
+    &, *:not(i) {
+        word-break: break-word;
+        font-weight: normal !important;
+    }
+
+    body#whitsundays {
+        width: 100vw;
+        min-height: 100vh;
+        overflow-x: hidden;
+
+        main {
+            width: 100vw;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: #29847E;
+        }
+    
+        &::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        &::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        &::-webkit-scrollbar-track,
+        &::-webkit-scrollbar-thumb {
+            border-radius: 0;
+            box-shadow: none;
+        }
+
+        #navigation {
+            .scrollactive-item {
+                &.active {
+                    @apply text-[#61c3bc] font-medium;
+                }
+            }
+
+            .circle_bar {
+                &.active {
+                    @apply relative after:content-[''];
+
+                    &::after {
+                        @apply absolute h-4 w-4 rounded-full bg-white top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] opacity-60;
+                    }
+                }
+            }
+
+            .hamburger {
+                @apply h-[28px] md:h-[34px] w-[30px] md:w-[36px] flex-col justify-between;
+                
+                .line{
+                    @apply w-full h-[4px] bg-white block;
+        
+                    &:not(:nth-child(2)) {
+                        transition: all 0.3s ease-in-out;
+                    }
+                }
+        
+                &:hover{
+                    @apply cursor-pointer;
+                }
+            }
+
+            &.navbar_active {
+                @apply h-auto min-h-screen w-screen fixed top-0 left-0 items-stretch z-[99] transition-all;
+
+                .image_container {
+                    @apply left-[26px] md:left-20;
+                }
+
+                .hamburger {
+                    @apply right-[26px] md:right-20;
+
+                    .line {
+                        &:nth-child(1) {
+                            @apply translate-y-[12px] md:translate-y-[15px] rotate-[45deg]
+                        }
+        
+                        &:nth-child(2) {
+                            @apply opacity-0;
+                        }
+        
+                        &:nth-child(3) {
+                            @apply translate-y-[-12px] md:translate-y-[-15px] rotate-[-45deg]
+                        }
+                    }
+                }
+
+                .image_container,
+                .hamburger {
+                    @apply absolute top-8 md:top-20 transition-all;
+                }
+                
+                .nav_links_container {
+                    @apply flex flex-col flex-1 justify-start items-start mt-[120px] md:mt-[160px];
+
+                    a {
+                        @apply h-[30px] text-xl mb-6;
+                    }
+                }
+
+                .orb_links_container {
+                    @apply hidden;
+                }
+            }
+        }
+    }
+
+    .m_0_auto {
+        margin: 0 auto;
+    }
+
+    .font-light,
+    .font-normal,
+    .font-medium,
+    .font-semibold,
+    .font-bold {
+        font-weight: normal !important;
+    }
+
+    .font-light,
+    .font-normal {
+        font-family: 'OpenSans-Medium', Sans-Serif;
+    }
+
+    .font-medium,
+    .font-semibold {
+        font-family: 'OpenSans-SemiBold', Sans-Serif;
+    }
+
+    .font-bold {
+        font-family: 'OpenSans-Bold', Sans-Serif;
+    }
+
+    img {
+        image-rendering: -webkit-optimize-contrast;
+    }
+}
