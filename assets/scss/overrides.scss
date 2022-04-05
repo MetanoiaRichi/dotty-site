@@ -10,30 +10,27 @@ html {
     }
 
     body#whitsundays {
-        width: 100vw;
-        min-height: 100vh;
-        overflow-x: hidden;
+        @apply w-screen min-h-screen overflow-x-hidden;
 
         main {
-            width: 100vw;
+            @apply w-screen
         }
 
         &::-webkit-scrollbar-thumb {
-            background: #29847E;
+            @apply bg-[#29847E];
         }
     
         &::-webkit-scrollbar {
-            width: 10px;
+            @apply w-[10px];
         }
         
         &::-webkit-scrollbar-track {
-            background: transparent;
+            @apply bg-transparent;
         }
 
         &::-webkit-scrollbar-track,
         &::-webkit-scrollbar-thumb {
-            border-radius: 0;
-            box-shadow: none;
+            @apply rounded-none shadow-none;
         }
 
         #navigation {
@@ -109,6 +106,30 @@ html {
 
                 .orb_links_container {
                     @apply hidden;
+                }
+            }
+        }
+    }
+
+    .vue-tabs {
+        .nav-tabs-navigation {
+            @apply mb-10;
+
+            .nav-tabs-wrapper {
+                ul {
+                    @apply text-center;
+
+                    li {
+                        @apply inline-flex items-center w-fit mr-4 rounded-2xl overflow-hidden bg-transparent;
+
+                        a {
+                            @apply text-white rounded-none text-[14px] bg-transparent mb-0;
+
+                            &.active_tab {
+                                @apply font-bold bg-[#1b3f4e];
+                            }
+                        }
+                    }
                 }
             }
         }

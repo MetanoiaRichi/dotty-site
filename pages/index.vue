@@ -5,7 +5,7 @@
             <IndexTheBackground/>
             <IndexTheSolution/>
             <IndexTheResult/>
-            <IndexTheSlideshow/>
+            <!-- <IndexTheSlideshow/> -->
         </div>
 
         <div class="absolute top-0 left-0 w-screen h-full flex flex-col items-center overflow-hidden z-[-1]">

@@ -39,14 +39,23 @@
                         :key="index"
                         :to="{ path: '/', hash:'#' + nav.id}" 
                         :data-section-selector="'#' + nav.id"
-                        class="scrollactive-item transition-colors inline-flex items-center h-full font-bold text-sm cursor-pointer text-white">
+                        class="scrollactive-item inline-flex items-center h-full font-bold text-sm cursor-pointer text-white">
                         <span @click="isActive = false">{{ nav.label }}</span>
                     </NuxtLink>
-                    <div class="bg-[#484848] w-[1px] mx-[20px] h-[36px] hidden lg:block" :key="'divider-' + index" v-if="index != navList.length - 1"></div>
+                    <div class="bg-[#484848] w-[1px] mx-[20px] h-[36px] hidden lg:block" :key="'divider-' + index"></div>
                 </template>
+                
+                <a class="inline-flex items-center h-full font-bold text-sm cursor-pointer text-white"><span>Slideshow</span></a>
             </section>
 
             <section class="fixed hidden md:flex flex-col top-[50%] translate-y-[-50%] md:right-[40px] lg:right-[50px] orb_links_container">
+                <NuxtLink 
+                    :to="{ path: '/', hash:'#banner'}" 
+                    :class="{ active : activeItem == 'banner' }"
+                    data-section-selector="#banner"
+                    class="mr-5 md:mr-0 md:mb-5 rounded-full circle_bar transition-all h-[6px] w-[6px] bg-white">
+                </NuxtLink>
+
                 <template v-for="(nav, index) in navList">
                     <NuxtLink 
                         :key="'circle-' + index"
@@ -83,10 +92,10 @@ export default {
                     id: 'result',
                     label: 'Result & Effectiveness'
                 },
-                {
-                    id: 'slideshow',
-                    label: 'Slideshow'
-                },
+                // {
+                //     id: 'slideshow',
+                //     label: 'Slideshow'
+                // },
             ],
             activeItem: null,
             isActive: false,
