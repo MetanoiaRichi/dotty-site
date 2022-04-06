@@ -1,11 +1,10 @@
 <template>
 	<div id="whitsundays_index" class="relative overflow-hidden w-screen">
         <div class="pt-[76px] lg:pt-0">
-            <IndexTheBanner/>
             <IndexTheBackground/>
             <IndexTheSolution/>
             <IndexTheResult/>
-            <!-- <IndexTheSlideshow/> -->
+            <IndexTheSlideshow/>
         </div>
 
         <div class="absolute top-0 left-0 w-screen h-full flex flex-col items-center overflow-hidden z-[-1]">

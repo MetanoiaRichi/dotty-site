@@ -1,8 +1,6 @@
 export default {
-    // Target: https://go.nuxtjs.dev/config-target
     target: 'static',
 
-    // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
         title: 'The WhitSundays',
         htmlAttrs: {
@@ -31,7 +29,6 @@ export default {
         viewer: true
     },
 
-    // Global CSS: https://go.nuxtjs.dev/config-css
     css: [
         '~/assets/fonts/OpenSans/style.css',
     ],
@@ -41,28 +38,16 @@ export default {
         { src: '~/plugins/vue-scroll-active', ssr: false },
     ],
 
-    // Auto import components: https://go.nuxtjs.dev/config-components
     components: true,
 
-    // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
     buildModules: [
-        // https://go.nuxtjs.dev/tailwindcss
         '@nuxtjs/tailwindcss',
     ],
 
-    // Modules: https://go.nuxtjs.dev/config-modules
     modules: [
     ],
 
-    // Build Configuration: https://go.nuxtjs.dev/config-build
     build: {
-        // terser:{
-        //     terserOptions: {
-        //         compress:{
-        //             drop_console: false,
-        //         },
-        //     },
-        // },
     }
 }
 

@@ -2,7 +2,6 @@
 	<main class="overflow-hidden w-screen">
         <HeaderNavigation />
 		<Nuxt />
-        <!-- <TheFooter /> -->
 	</main>
 </template>
 

@@ -1,62 +1,33 @@
 <template>
     <section 
         id="result" 
-        class="min-h-[calc(100vh-76px)] lg:min-h-screen px-[26px] md:px-20 lg:px-[100px] w-screen overflow-hidden py-32 text-white flex flex-col items-center justify-center bg-gradient-to-b from-[#144252] via-[#1f4f65] to-[#1a536e]">
+        class="min-h-[calc(100vh-76px)] lg:min-h-screen px-[26px] md:px-20 lg:px-[100px] w-screen overflow-hidden py-32 text-white flex flex-col items-center justify-center">
 
-        <client-only>
-            <vue-tabs type="pills" centered>
-                <v-tab
-                    v-for="(item, index) in results" 
-                    :key="index"
-                    :title="item.title">
-                    
-                    <div class="flex flex-col lg:flex-row items-center justify-center w-full">
-                        <div class="lg:flex-1 w-full lg:w-[unset] lg:max-w-[40%] lg:pr-14 mb-6 md:mb-14 lg:mb-0">
-                            <img class="h-auto w-full relative" :src="'https://source.unsplash.com/1280x720/?' + item.title"/>
-                        </div>
+        <h1 class="text-4xl md:text-6xl font-semibold mb-8 md:mb-16 text-left md:text-center w-full">Solution</h1>
 
-                        <div class="lg:flex-1 w-full lg:w-[unset] lg:max-w-[40%] lg:pl-14 flex flex-col">
-                            <p class="text-sm leading-6 mb-8">{{ item.content }}</p>
+        <div class="flex flex-col lg:flex-row justify-center w-full">
+            <div class="lg:flex-1 w-full lg:w-[unset] lg:max-w-[40%] lg:pr-14 mb-6 md:mb-14 lg:mb-0">
+                <p class="text-sm leading-6">
+                    We knew movies rated high on the list of our target’s interests and, with incredible beaches, seaplanes, yachts and glamorous locations, the Whitsundays is the perfect setting for a movie.<br><br>
+                    So we invited Australians to write it:
+                </p>
 
-                            <button class="h-[50px] px-6 rounded-md flex items-center justify-center py-4 text-base font-medium bg-[#178bc1] text-white w-full md:min-w-[200px] lg:min-w-fit md:w-fit self-center lg:self-start">
-                                View Project
-                            </button>
-                        </div>
-                    </div>
-                </v-tab>
-            </vue-tabs>
-        </client-only>
+                <h1 class="text-xl md:text-5xl font-semibold my-6">
+                    The Whitsundays.<br>
+                    A movie that’s waiting to be written.
+                </h1>
+
+                <p class="text-sm leading-6">We enlisted world-renowned screenwriter Craig Pearce as Script Supervisor. Then for 20 days we posted a daily storyboard image on Facebook and Instagram, inviting the public to write scenes for a chance to win a $10,000 luxury holiday.</p>
+            </div>
+
+            <div class="lg:flex-1 w-full lg:w-[unset] lg:max-w-[40%] lg:pl-14">
+                <p class="text-sm leading-6">
+                    The campaign launched with a trailer, radio and online advertising.<br><br>
+                    We reacted to the storyline as it developed, selecting and treating images according to the previous winning scene.<br><br>
+                    Each scene written and shared became a compelling “ad” for the Whitsundays.<br><br>
+                    Together, a Hollywood screenwriter and the Australian public had created the world’s first crowd-sourced movie storyboard and a story universe with millions of possible permutations. 
+                </p>
+            </div>
+        </div>
     </section>
 </template>
-
-<script>
-export default {
-    data() {
-        return {
-            results: [
-                {
-                    title: 'Video',
-                    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-                },
-                {
-                    title: 'Photography',
-                    content: ' Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
-                },
-                {
-                    title: 'Social',
-                    content: 'Turpis egestas maecenas pharetra convallis posuere morbi leo urna. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. In dictum non consectetur a erat.'
-                },
-                {
-                    title: 'PR',
-                    content: 'Orci eu lobortis elementum nibh. Sed odio morbi quis commodo odio aenean. Ligula ullamcorper malesuada proin libero nunc. Dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida. In pellentesque massa placerat duis ultricies lacus.'
-                },
-                {
-                    title: 'Radio',
-                    content: 'Live reads from NOVA presenters reflected the ever-evolving story of Jake in real time, and encouraged people to get involved to shape the story themselves.'
-                },
-            ]
-        }
-    }
-}
-</script>
-
