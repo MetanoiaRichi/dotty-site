@@ -1,7 +1,7 @@
 <template>
     <section 
         id="result" 
-        class="min-h-[calc(100vh-76px)] lg:min-h-screen px-[26px] md:px-20 lg:px-[100px] w-screen overflow-hidden py-32 text-white flex flex-col items-center justify-center">
+        class="min-h-screen px-[26px] md:px-20 lg:px-[100px] w-screen overflow-hidden py-32 text-white flex flex-col items-center justify-center">
 
         <h1 class="text-4xl md:text-6xl font-semibold mb-8 md:mb-16 text-left md:text-center w-full">Solution</h1>
 

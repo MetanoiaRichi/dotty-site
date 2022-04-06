@@ -1,7 +1,7 @@
 <template>
     <section 
         id="slideshow" 
-        class="min-h-[calc(100vh-76px)] lg:min-h-screen px-[26px] md:px-20 lg:px-[100px] w-screen overflow-hidden py-32 text-white flex flex-col items-center justify-center bg-gradient-to-b from-[#144252] via-[#1f4f65] to-[#1a536e]">
+        class="min-h-screen px-[26px] md:px-20 lg:px-[100px] w-screen overflow-hidden py-32 text-white flex flex-col items-center justify-center bg-gradient-to-b from-[#144252] via-[#1f4f65] to-[#1a536e]">
 
         <client-only>
             <vue-tabs type="pills" centered>
