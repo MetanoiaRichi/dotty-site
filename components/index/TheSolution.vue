@@ -1,7 +1,7 @@
 <template>
     <section 
         id="solution" 
-        class="min-h-screen px-[26px] md:px-20 lg:px-[100px] w-screen overflow-hidden flex flex-col lg:flex-row items-center py-32 justify-center">
+        class="min-h-[calc(100vh-76px)] lg:min-h-screen px-[26px] md:px-20 lg:px-[100px] w-screen overflow-hidden flex flex-col lg:flex-row items-center py-32 justify-center">
 
         <div class="lg:flex-1 w-full lg:w-[unset] lg:max-w-[40%] lg:pr-14 mb-14 lg:mb-0">
             <img class="h-auto w-full relative" :src="require('~/assets/webp/logo-word.webp')"/>

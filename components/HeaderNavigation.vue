@@ -4,7 +4,7 @@
             id="navigation"
             active-class="active" 
             :duration="200"
-            :offset="40"
+            :offset="30"
             :alwaysTrack="true"
             :highlightFirstItem="true"
             :scrollOnStart="false"
