@@ -13,7 +13,7 @@ html {
         @apply w-screen min-h-screen overflow-x-hidden;
 
         main {
-            @apply w-screen
+            @apply w-screen;
         }
 
         &::-webkit-scrollbar-thumb {
